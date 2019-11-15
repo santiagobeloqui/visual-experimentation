@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import {Router, Link} from '@reach/router';
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home/HomeContainer';
+import About from './About/AboutContainer';
 
 class App extends Component {
   render() {
@@ -11,13 +13,16 @@ class App extends Component {
           <h1>PROJECT</h1>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>About</li>
+              <Link to="/"><li>Home</li></Link>
+              <Link to="/about"><li>About</li></Link>
               <li>Contact</li>
             </ul>
           </nav>
         </div>
-        <Home/>
+        <Router>
+          <Home path="/"/>
+          <About path="/about"/>
+        </Router>
       </div>
     );
   }

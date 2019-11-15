@@ -44,3 +44,9 @@ nav{
 li{
   list-style-type: none;
 }
+
+a, a:visited{
+  text-decoration: none;
+  color: inherit;
+  z-index: 2;
+}

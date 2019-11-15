@@ -64,7 +64,7 @@ const Home = () => {
             <div className="title-wraper">
                 <h1>This is a Home Title</h1>
             </div>
-            <canvas id="canvas" />
+            <canvas id="canvas" className="home-canvas"/>
         </div>
     );
 }
