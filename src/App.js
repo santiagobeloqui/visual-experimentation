@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Home/HomeContainer';
 import About from './About/AboutContainer';
+import Contact from './Contact/ContactContainer';
 
 class App extends Component {
   render() {
@@ -15,13 +16,14 @@ class App extends Component {
             <ul>
               <Link to="/"><li>Home</li></Link>
               <Link to="/about"><li>About</li></Link>
-              <li>Contact</li>
+              <Link to="/contact"><li>Contact</li></Link>
             </ul>
           </nav>
         </div>
         <Router>
           <Home path="/"/>
           <About path="/about"/>
+          <Contact path="/contact"/>
         </Router>
       </div>
     );

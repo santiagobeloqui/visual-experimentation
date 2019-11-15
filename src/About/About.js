@@ -15,6 +15,8 @@ const About = ()=>{
         // canvas.height = window.innerHeight * 0.5; 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight; 
+        const context = canvas.getContext('2d');
+        context.clearRect(0,0,canvas.width, canvas.height);  
         for(let i=0; i < 20; i++){
             points.push(
                 {
@@ -55,6 +57,7 @@ const About = ()=>{
             counter = 0;
             points = [];
             canvasOpacity = 1;
+            opacity= 0;
             goRight = Math.random() > 0.5;
             goDown = Math.random() > 0.5;
             for(let i=0; i < 20; i++){

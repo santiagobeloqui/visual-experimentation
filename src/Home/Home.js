@@ -5,9 +5,9 @@ const Home = () => {
     let points = [];
     useEffect(()=>{
         const canvas = document.getElementById('canvas');
-        canvas.width = window.innerWidth * 0.45;
-        canvas.height = window.innerHeight * 0.5; 
-        for(let i=0; i < 50; i++){
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight; 
+        for(let i=0; i < 70; i++){
             points.push(
                 {
                     initialX: Math.random() * canvas.width,
